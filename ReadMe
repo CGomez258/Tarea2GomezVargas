@@ -3,3 +3,50 @@ Andres Vargas
 
 Tarea 2 curso de Microcontroladores y Microporcesadores 
 II semestre 2019
+
+Preguntas Teóricas
+1) ¿Qué es Git? 
+Un software de control de versiones, según los diversos cambios que se realizan sobre los elementos de algún producto o una configuración del mismo.
+
+2)¿Qué es Github? 
+Un sitio web que ayuda a los desarrolladores a almacenar y administrar su código,así como llevar un registro y control de cualquier cambio sobre este código. Este ofrece un servicio de hosting de repositorios almacenados en la nube y hace que sea más fácil usar Git como la versión de control y colaboración. Con esto se tiene una copia local del código generado y se pueden hacer varias versiones para poder recular si existe algún error, también para trabajar en funcionalidades nuevas sin necesidad de modificar la versión funcional y así no romper el proyecto.
+
+3) ¿Qué es un branch? 
+Las ramas son caminos que puede tomar el desarrollo de un software, algo que ocurre naturalmente para resolver problemas o crear nuevas funcionalidades. Permiten que los proyectos puedan tener diversos estados y que los desarrolladores sean capaces de pasar de uno a otro de una manera ágil. Las ramas permiten crear respaldos, si los cambios de la rama no están completos, se puede poner de nuevo el proyecto en el estado original que se tenía antes de empezar a hacer esos cambios que no están terminados.
+
+Las ramificaciones permiten tomar la rama principal de desarrollo (master) y a partir de ahí continuar trabajando sin seguir la rama principal de desarrollo. Facilitando crear una nueva copia del código, lo cual puede tomar mucho tiempo cuando se trata de proyectos grandes.
+
+4)¿Qué es un commit? 
+Acción de guardar o subir archivos al repositorio remoto/local personal (una actualización de los cambios realizados), es usado para cambiar a la cabecera. 
+
+5)¿Qué se entiende cuando se dice que un archivo esta “staged”? 
+Git tiene tres estados principales en los que se pueden encontrar un archivos: confirmado (committed), modificado (modified), y preparado (staged). 
+Confirmado significa que los datos están almacenados de manera segura en la base de datos local. 
+Modificado significa que se ha modificado el archivo pero todavía no se ha confirmado a la base de datos. 
+Preparado significa que se ha marcado un archivo modificado en su versión actual para que vaya en la próxima confirmación.
+Esto se subdivide en tres secciones principales de un proyecto de Git: el directorio de Git (Git directory), el directorio de trabajo (working directory), y el área de preparación (staging area).
+
+6) ¿Qué hace el comando git checkout?
+El comando checkout se puede usar para crear ramas o cambiar entre ellas. Con el siguiente comando se crea una nueva rama y se cambia a esta:
+command git checkout -b <banch-name>
+
+7)¿Qué hace el comando git stash? 
+Este ayuda a salvar cambios que no están por ser comprometidos inmediatamente, pero temporalmente: git stash
+
+8)¿Qué hace el comando git add? 
+Este comando permite agregar archivos al index. El siguiente comando agrega un nombre de archivo temp.txt en el directorio local del index: git add temp.txt
+
+9)¿Qué es Pytest? 
+Pytest es un entorno de trabajo que permite escribir códigos de prueba con python. Permite probar códigos relacionados con bases de datos, tiene una sintaxis simple y puede correr pruebas en paralelo. 
+
+10) Bajo el contexto de pytest. Que es un “assert”? 
+Un assert es una bandera que muestra un estado verdadero o falso. En pytest si un assert falla en una prueba este se detiene en este punto y el resto de cédigo por probar no se ejecuta y pytest continuará probando otro método sobre este programa.
+Ejemplo
+assert "hello" == "Hai" is an assertion failure.
+assert 4==4 is a successful assertion
+assert True is a successful assertion
+assert False is an assertion failure.
+
+11)  Que es Flake 8? 
+Lint es una herramienta de programación utilizada para detectar código sospechoso, confuso o incompatible entre distintas arquitecturas. En este caso se corre una herramienta para medir la calidad del código generado. Esto revisara el código y generará un grupo de instrucciones para arreglar y limpiar el código.
+Para poder revisar todos los archivos del proyecto se puede usar la herramienta flake8 que permite revisar los archivos de código fuente y nos dice donde no se está siguiendo la sintaxis. También permite revisar si existen variables declaradas pero no usadas e imports que no se usan. Flake8 permite realizar pruebas como lo hace Lint. Para iniciar esta herramienta se debe digitar: python<version> -m pip install flake8
