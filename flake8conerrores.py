@@ -1,4 +1,4 @@
-def asd()
-    if true
-:
-    print(sdf)
+def asd ():
+    if True:
+        print("sdf")
+    return
