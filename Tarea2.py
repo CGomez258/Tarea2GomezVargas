@@ -18,4 +18,3 @@ def funcion(A, B):
         # la multiplicación de A y B se guarda en multiplicación
         return(resta, suma, multiplicacion)
         # se retornan los valores en una tupla
-
